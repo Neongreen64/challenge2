@@ -1,0 +1,185 @@
+
+:root {
+    --white: #fff;
+    --dark-blue: #13293d;
+  }
+  
+  body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  h1 {
+    font-family:'Times New Roman', Times, serif;
+    display: inline-block;
+    font-size: 50px;
+    background-color: lightblue;
+    color: var(--dark-blue);
+  }
+  
+  h2 {
+    display: flexbox;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: var(--dark-blue);
+    background-color: white;
+    float: right;
+
+  }
+
+  h3 {
+    color: var(--dark-blue);
+    float: left;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    border-right: solid var(--dark-blue) 5px;
+  }
+
+  h4 {
+    color: var(--dark-blue);
+    float: inline-start;
+    padding-left: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-decoration: underline;
+  }
+
+  h5 {
+    color:var(--dark-blue);
+    background-color: lightblue;
+    font-size: 25px;
+  }
+
+  p{
+    font-size: 25px;
+    color:var(--dark-blue);
+  }
+  
+  
+  header {
+    text-align: left;
+    /* Refer to CSS values by the name of the custom property we assigned it */
+    background: var(--dark-blue);
+    color: var(--dark-blue);
+  }
+
+  header a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    
+  }
+
+  header a:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
+  }
+
+
+  
+  nav {
+    background-image: linear-gradient(blue, rgb(0, 2, 131));
+    padding: 100px;
+  }
+  
+
+  
+  main {
+    display: inline-block;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--dark-blue);
+    color: var(--white);
+    margin-top: auto;
+  }
+
+  img {
+    background-color: lightblue;
+    padding: 25px;
+    margin-left: 20px;
+  }
+  
+  .card {
+    border-radius: 25px;
+    background-image: url(../images/cssPicture.png);
+    width: 200px;
+    height: 150px; 
+    flex: 0 0 300px;
+    margin: 20px;
+    filter: grayscale(100%);
+    
+  } 
+
+  .cardGithub {
+    border-radius: 25px;
+    background-image: url(../images/github-cover.jpg);
+    width: 1000px;
+    height: 500px;
+    flex: 0 0 1000px;
+    margin: 20px;
+    filter: grayscale(100%);
+  }
+
+  .cardGithub:hover {
+    filter: grayscale(0%);
+  }
+
+  .card:hover {
+    filter: grayscale(0%);
+  }
+ 
+
+  .products {
+    background-color: var(--white);
+    
+    
+  }
+  
+
+  #links {
+    display: inline-block;
+    padding-left: 70%;
+  }
+
+  
+
+  #subheadcards {
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+  }
+
+  #subheadabout {
+    
+    display: flex;
+    padding-top: 150px;
+  }
+
+  #subheadcontact {
+    
+    display: flex;
+    padding-top: 150px;
+  }
+
+  #subheadresume {
+    
+    display: flex;
+    padding-top: 150px;
+  }
+
+  @media (max-width: 800px) {
+    #subheadcards {
+      flex-direction: column;
+    }
+  }
+
